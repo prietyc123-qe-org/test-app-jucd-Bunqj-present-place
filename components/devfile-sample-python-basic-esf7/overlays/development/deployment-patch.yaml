@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-esf7
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-eblz-tenant/test-app-jucd/devfile-sample-python-basic-esf7@sha256:0f1c234155984e57b8e9c434b65adb0eade70ef86d85bd46f4769b3c52a193a9
+        name: my-python
+        resources: {}
+status: {}
